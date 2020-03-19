@@ -1,13 +1,9 @@
 pipeline {
-agent any
-  tools {
-    jdk 'jdk'
-    maven 'maven'
-  }
-stages {
-stage ('hi') {
-steps {
-sh 'echo hiiiii'
+  agent any
+   stages {
+     stage ('hi') {
+       steps {
+          sh 'echo hiiiii'
 }
 }
 }
